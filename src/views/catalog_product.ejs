@@ -1,0 +1,37 @@
+<% include partials/_header %>
+  <body>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+              <h2>Añadir</h2>
+              <hr>
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask" >
+                <div class="form-group" >
+                  Código:
+                  <input type="text" id="id_product" placeholder="Código de producto" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  Nombre:
+                  <input id="name" type="text" class="form-control" placeholder="Nombre de producto" required></input>
+                </div>
+                <div class="form-group">
+                  Precio:
+                  <input id="price_retail" type="number" min="0" class="form-control" placeholder="Precio de venta" required></input>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+<% include partials/_footer %>
